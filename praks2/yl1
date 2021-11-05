@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# our comment is here
-
 echo "Tere,$(whoami)!"
 
 
