@@ -1,7 +1,14 @@
 #!/bin/bash
 
-date +"Today is %A, %B %d, %Y"
+#Date commandiga näitab nädalapäeva, kuud koos päevaga ja aastat
 
-date +"Time is %H:%M "
+#Date commandiga näitab tundi ja minuteid
+
+#cal-iga näitab kalendrit
+
+echo "Today is $(date +'%A, %B %d, %Y')"
+
+echo "Time is $(date +%H:%M)"
 
 echo "Calendar of$(cal)"
+
