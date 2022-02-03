@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# andmed
+echo -n "Reisijate arv gruppis: "
+read reisijad
+echo -n "Kohtade arv bussis: "
+read kohad
+
+# arvutab kohad bussis
+bussid=$(($reisijad / $kohad))
+ylejaanud=$(($reisijad % $kohad))
+
+if test $ylejaanud -gt 0
+then
+	bussid=$(($bussid + 1))
+fi
+echo "Kokku on vaja $bussid bussi"
